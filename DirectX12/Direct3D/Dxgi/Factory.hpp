@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "../DxBase.hpp"
 #include <dxgi1_4.h>
 
