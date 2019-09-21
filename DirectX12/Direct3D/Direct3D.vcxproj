@@ -153,9 +153,9 @@
     <ClInclude Include="Dxgi\Factory.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dx12\Adapter.cpp" />
     <ClCompile Include="Dx12\Debug.cpp" />
     <ClCompile Include="Dx12\Main.cpp" />
+    <ClCompile Include="Dxgi\Adapter.cpp" />
     <ClCompile Include="Dxgi\Factory.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level4</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level4</WarningLevel>
