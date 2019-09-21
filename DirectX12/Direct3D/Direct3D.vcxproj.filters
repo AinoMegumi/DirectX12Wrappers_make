@@ -16,17 +16,35 @@
     <Filter Include="Dxgi">
       <UniqueIdentifier>{197fd324-636b-4ef4-b149-39ece60042c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dx12">
+      <UniqueIdentifier>{1db17c68-2f5c-4c0e-b084-5c533999af53}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DxBase.hpp">
+    <ClInclude Include="Dxgi\Factory.hpp">
+      <Filter>Dxgi</Filter>
+    </ClInclude>
+    <ClInclude Include="Dx12\Debug.hpp">
+      <Filter>Dx12</Filter>
+    </ClInclude>
+    <ClInclude Include="ComPtr.hpp">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Dxgi\Factory.hpp">
+    <ClInclude Include="Dxgi\Adapter.hpp">
       <Filter>Dxgi</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dxgi\Factory.cpp">
+      <Filter>Dxgi</Filter>
+    </ClCompile>
+    <ClCompile Include="Dx12\Debug.cpp">
+      <Filter>Dx12</Filter>
+    </ClCompile>
+    <ClCompile Include="Dx12\Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Dx12\Adapter.cpp">
       <Filter>Dxgi</Filter>
     </ClCompile>
   </ItemGroup>
