@@ -10,6 +10,9 @@ namespace meigetsusoft {
 		template<class C>
 		class ComPtr : public MSComPtr<C> {
 		public:
+			ComPtr() : MSComPtr<C>() {}
+			ComPtr(std::nullptr_t) : MSComPtr<C>(nullptr) {}
+			ComPtr(C* ptr) : MSComPtr<C>(ptr) {}
 			ComPtr(const std::function<HRESULT(MSComPtr<C>&)>& initFunction) {
 				if (const HRESULT hr = initFunction(*this); FAILED(hr))
 					throw std::runtime_error("Failed to init " + std::string(typeid(C).name) + "\nErrorCode : " + std::to_string(hr));
