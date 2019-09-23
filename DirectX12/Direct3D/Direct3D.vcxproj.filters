@@ -33,6 +33,12 @@
     <ClInclude Include="Dxgi\Adapter.hpp">
       <Filter>Dxgi</Filter>
     </ClInclude>
+    <ClInclude Include="Dx12\Device.hpp">
+      <Filter>Dx12</Filter>
+    </ClInclude>
+    <ClInclude Include="Dx12\CommandQueue.hpp">
+      <Filter>Dx12</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dxgi\Factory.cpp">
@@ -46,6 +52,12 @@
     </ClCompile>
     <ClCompile Include="Dxgi\Adapter.cpp">
       <Filter>Dxgi</Filter>
+    </ClCompile>
+    <ClCompile Include="Dx12\Device.cpp">
+      <Filter>Dx12</Filter>
+    </ClCompile>
+    <ClCompile Include="Dx12\CommandQueue.cpp">
+      <Filter>Dx12</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

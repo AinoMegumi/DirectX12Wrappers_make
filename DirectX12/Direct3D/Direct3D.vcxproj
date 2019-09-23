@@ -147,13 +147,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Dx12\CommandQueue.hpp" />
     <ClInclude Include="Dx12\Debug.hpp" />
     <ClInclude Include="ComPtr.hpp" />
+    <ClInclude Include="Dx12\Device.hpp" />
     <ClInclude Include="Dxgi\Adapter.hpp" />
     <ClInclude Include="Dxgi\Factory.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Dx12\CommandQueue.cpp" />
     <ClCompile Include="Dx12\Debug.cpp" />
+    <ClCompile Include="Dx12\Device.cpp" />
     <ClCompile Include="Dx12\Main.cpp" />
     <ClCompile Include="Dxgi\Adapter.cpp" />
     <ClCompile Include="Dxgi\Factory.cpp">
