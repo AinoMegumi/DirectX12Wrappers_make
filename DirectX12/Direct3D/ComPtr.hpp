@@ -17,6 +17,14 @@ namespace meigetsusoft {
 				if (const HRESULT hr = initFunction(*this); FAILED(hr))
 					throw std::runtime_error("Failed to init " + std::string(typeid(C).name()) + "\nErrorCode : " + std::to_string(hr));
 			}
+			ComPtr(const ComPtr<C>&) = delete;
+			ComPtr<C>& operator = (const ComPtr<C>&) = delete;
+			ComPtr(ComPtr<C>&& c) : MSComPtr<C>(std::move(c)) { c = nullptr; }
+			ComPtr<C>& operator = (ComPtr<C>&& c) { 
+				*this = std::move(c);
+				c = nullptr;
+				return *this;
+			}
 		};
 	}
 }
