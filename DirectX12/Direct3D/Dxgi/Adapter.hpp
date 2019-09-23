@@ -5,8 +5,8 @@
 namespace meigetsusoft {
 	namespace DirectX {
 		namespace Dxgi {
-			using HardwareAdapter = COM::ComPtr<IDXGIAdapter1>;
-			using WarpAdapter = COM::ComPtr<IDXGIAdapter>;
+			using HardwareAdapter = MSComPtr<IDXGIAdapter1>;
+			using WarpAdapter = MSComPtr<IDXGIAdapter>;
 
 			struct HardwareAdapterInformation : public DXGI_ADAPTER_DESC1 {
 				HardwareAdapterInformation() = default;
